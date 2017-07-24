@@ -92,7 +92,7 @@ class MainActivity : AppCompatActivity() {
         override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                                   savedInstanceState: Bundle?): View? {
             val rootView = inflater!!.inflate(R.layout.fragment_register, container, false)
-            val textView = rootView.findViewById(R.id.section_label) as TextView
+            val textView = rootView.findViewById(R.id.text) as TextView
             textView.text = getString(R.string.section_format, arguments.getInt(ARG_SECTION_NUMBER))
             return rootView
         }
